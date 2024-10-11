@@ -1,0 +1,59 @@
+// Set your brand colors
+$primary: #5E3AE2;
+$success: #D8FAFF;
+$dark: #1B233F;
+$info: #000087;
+$light: #F0FCFE;
+$size-7: clamp(0.63rem, 0.13vw + 0.59rem, 0.75rem);
+$size-6: clamp(0.74rem, 0.21vw + 0.68rem, 0.94rem);
+$size-5: clamp(0.87rem, 0.32vw + 0.79rem, 1.17rem);
+$size-4: clamp(1.03rem, 0.46vw + 0.91rem, 1.46rem);
+$size-3: clamp(1.21rem, 0.65vw + 1.05rem, 1.63rem);
+$size-2: clamp(1.43rem, 0.9vw + 1.2rem, 2.05rem);
+$size-1: clamp(3.2rem, 2.44vw + 1.38rem, 3.86rem);
+$size-small: 0.75rem;
+$size-normal: 1rem;
+$size-medium: 1.25rem;
+$size-large: 1.5rem;
+$body-size: 16px;
+$icon-dimensions: $size-6;
+$icon-dimensions-small: $size-7;
+$icon-dimensions-medium: $size-5;
+$icon-dimensions-large: $size-4;
+$control-border-width: 2px;
+$control-radius: 12px;
+
+// Path to Bulma's sass folder
+@forward "../../node_modules/bulma/sass/" with (
+  $family-primary: '"Roboto", sans-serif',
+  $title-family: '"Poppins", sans-serif',
+  $primary: $primary,
+  $link: $primary,
+  $info: $info,
+  $success: $success,
+  $light: $light,
+  $dark: $dark,
+  $size-7: $size-7,
+  $size-6: $size-6,
+  $size-5: $size-5,
+  $size-4: $size-4,
+  $size-3: $size-3,
+  $size-2: $size-2,
+  $size-1: $size-1,
+  $size-small: $size-small,
+  $size-normal: $size-normal,
+  $size-medium: $size-medium,
+  $size-large: $size-large,
+  $body-size: $body-size,
+  $icon-dimensions: $icon-dimensions,
+  $icon-dimensions-small: $icon-dimensions-small,
+  $icon-dimensions-medium: $icon-dimensions-medium,
+  $icon-dimensions-large: $icon-dimensions-large,
+  $control-border-width: $control-border-width,
+  $control-radius: $control-radius,
+  $cssvars-prefix: '',
+);
+
+// Import the Google Font
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,800");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");

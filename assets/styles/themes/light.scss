@@ -1,0 +1,9 @@
+[data-theme="light"], .theme-light {
+    :root {
+        --light-l: 94% !important;
+    }
+
+    .is-sun {
+      display: none !important;
+    }
+}
