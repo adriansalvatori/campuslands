@@ -9,8 +9,13 @@ menuButton.addEventListener('click', () => {
   menu.classList.toggle('is-active');
 });
 
-const darkModeButton = document.querySelector('.dark-mode');
-darkModeButton.addEventListener('click', () => {
-  document.body.classList.toggle('theme-dark');
-  document.body.classList.toggle('theme-light');
-});
+const darkModeButtons = document.querySelectorAll('.dark-mode');
+
+darkModeButtons.forEach((darkModeButton) => {
+  darkModeButton.addEventListener('click', () => {
+    document.documentElement.dataset.theme === "dark" ? 
+      document.documentElement.dataset.theme = "light" :
+      document.documentElement.dataset.theme = "dark";
+  });
+})
+
